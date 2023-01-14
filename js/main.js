@@ -14,7 +14,7 @@ function findAnimal(index) {
     const element =  animals[index];
 
     try {
-        if (element == undefined) {
+        if (typeof element == 'undefined') {
             throw new TypeError("Ви ввели невірний індекс, який посилається на невизначене значення.");
         }
         console.log(`Назва тварини, яку ви обрали - ${element}.`);
@@ -40,7 +40,7 @@ function findAnimalAnotherWay(index) {
         'заєць'
     ];
 
-    if(animals[index] !== undefined) {
+    if(typeof animals[index] !== 'undefined') {
         return animals[index];
     }
 
